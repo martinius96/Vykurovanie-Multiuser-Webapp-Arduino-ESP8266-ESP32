@@ -43,6 +43,7 @@
 * Otvoríme súbor connect.php v priečinku vykurovanie_online/system nastavíme údaje do MySQL databázy
 * zo zložky sql importujeme .sql súbor --> štruktúru tabuliek do MySQL databázy
 * projekt je pripravený pre použitie
+* **kompatibilné pre PHP 5.6 a 7.1**
 
 # Platená verzia projektu
 **Ponúka:**
