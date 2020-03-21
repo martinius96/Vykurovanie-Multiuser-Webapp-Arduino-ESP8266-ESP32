@@ -30,10 +30,14 @@ $vsetko_get = mysqli_query($con,"SELECT * FROM `user_vykurovanie` WHERE `id`='".
       <div class="row">
         <div class="col-lg-12">									
 <h2>Zdrojový kód pre:</h2>
-								<?php echo '<li><b>Používateľ:</b> '.$username.'</li>'; ?>
-								<?php echo '<li><b>Mikrokontróler:</b> '.$mikrokontroler.'</li>'; ?>
-								<?php echo '<li><b>Teplotné senzory:</b> '.$hardver.'</li>'; ?>
-								<?php echo '<li><b>Váš token:</b> '.$kodik.'</li>'; ?>
+								<?php echo '<li><b>Používateľ:</b> '.htmlspecialchars($username).'</li>'; ?>
+								<?php echo '<li><b>Mikrokontróler:</b> '.htmlspecialchars($mikrokontroler).'</li>'; ?>
+								<?php echo '<li><b>Teplotné senzory:</b> '.htmlspecialchars($hardver).'</li>'; ?>
+								<?php echo '<li><b>Váš token:</b> '.htmlspecialchars($kodik).'</li>'; ?>
+<div class="alert alert-warning">
+<strong>Knižnice pre DS18B20 teplotné senzory a OneWire zbernicu: </strong><a href="https://ulozto.sk/file/1Rsnj2eVh0e1/ds18b20-kniznice-zip">https://ulozto.sk/file/1Rsnj2eVh0e1/ds18b20-kniznice-zip</a>
+<li>Obsah archívu je nutné rozbaliť do: <b>C:/Používatelia/Používateľ/Dokumenty/Arduino/libraries</b></li>
+</div>  
 <?php 
 if(($mikrokontroler=="W5100")AND($hardver=="DS18B20")){
 ?>
