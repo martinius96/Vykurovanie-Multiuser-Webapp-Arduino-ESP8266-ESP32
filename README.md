@@ -1,4 +1,5 @@
 # Multiuser webová aplikácia pre riadenie vykurovania
+#
 **Podpora projektu:**
 * https://www.paypal.me/chlebovec
 **Podporovaný otvorený hardvér**
