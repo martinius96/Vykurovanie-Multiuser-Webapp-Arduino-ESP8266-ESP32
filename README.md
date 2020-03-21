@@ -65,4 +65,4 @@
 ![Informácie o režime vykurovania - kotla](https://i.imgur.com/HOFA4sy.png)
 ![Nastavenie termostatu](https://i.imgur.com/T2jjkw2.png)
 ![Nastavenie názvov miestností - teplomerov](https://i.imgur.com/jZKUvUX.png)
-![Zdrojový kód pre ESP8266 (Arduino) a schéma zapojenia](https://octodex.github.com/images/yaktocat.png)
+![Zdrojový kód pre ESP8266 (Arduino) a schéma zapojenia](https://i.imgur.com/jIPyRL6.png)
