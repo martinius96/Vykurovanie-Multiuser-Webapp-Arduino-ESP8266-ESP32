@@ -2,6 +2,7 @@
 #
 **Podpora projektu:**
 * https://www.paypal.me/chlebovec
+#
 **Podporovaný otvorený hardvér**
 * **Arduino + Ethernet W5100** - **HTTP** protokol
 * **Arduino + Ethernet W5500** - **HTTP** protokol
