@@ -34,7 +34,7 @@
 * Zdrojový kód pre ESP8266 využíva HTTPS fingerprint zo stránky php5.sk, ESP32 využíva Root CA certifikát pre CA stránky php5.sk
 
 # Povinosti prevádzkovateľa projektu
-* **Stiahnutím a využívaním projektu sa prevádzkovateľ zaväzuje k dodržiavaniu MIT licencie. **
+* **Stiahnutím a využívaním projektu sa prevádzkovateľ zaväzuje k dodržiavaniu MIT licencie.**
 * **Autor projektu si vyhradzuje právo k ponechaniu lišty v spodnej časti stránky**
 * **Prevádzkovateľ si uvedomuje právne riziká spojené s porušením licencie projektu**
 
