@@ -10,6 +10,7 @@
 #
 **Webaplikácia umožňuje**
 * Registráciu a prihlásenie používateľov so zvolením riadiaceho mikrokontroléru
+* Každému používateľovi je priradený token (Api kľúč), ktorým mikrokontróler zapisuje a číta z webového portálu
 * Prehľad 6 teplôt v reálnom čase (každý používateľ vidí iba svoje dáta)
 * Historicky prehľad posledných 1000 nahratých záznamov
 * Grafická reprezentácia záznamov za 24 hodín
@@ -47,6 +48,7 @@
 * Dynamická zmena zdrojových kódov na základe vyklikaných požiadaviek
 * Multijazyková podpora (Slovenčina, Čeština, Angličtina, Nemčina, Ruština)
 * Možnosť prezerať všetky namerané dáta
+* Možnosť limitovať zápis používateľa, intenzitu zápisov
 * Grafická reprezentácia za 24 hodín, 7 dní, 30 dní
 * Archivovať dáta po neobmedzenú dobu pre každého používateľa
 * Admin nástroje pre možnosť zablokovania používateľa, mazanie chatu, pridávanie oznamov na stránku
