@@ -1,5 +1,5 @@
 # Multiuser webová aplikácia pre riadenie vykurovania
-#
+* Webaplikácia je voľne dostupná, okresaná - free verzia
 **Podpora projektu:**
 * https://www.paypal.me/chlebovec
 #
