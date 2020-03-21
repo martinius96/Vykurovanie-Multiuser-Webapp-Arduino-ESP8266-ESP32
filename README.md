@@ -59,6 +59,7 @@
 * Možnosť zmeniť prihlasovacie údaje
 * Možnosť termostatu v dňoch, časoch, časové riadenie
 * Štatistické nástroje, výpisy, exporty do .xls, .xml, .csv
+* Emotikony v chate, ovládanie hlasom v slovenčine a ďalších jazykoch
 * Podpora
 * Pri záujme: martinius96@gmail.com
 
