@@ -59,3 +59,10 @@
 * Štatistické nástroje, výpisy, exporty do .xls, .xml, .csv
 * Podpora
 * Pri záujme: martinius96@gmail.com
+
+# Screenshoty
+![Prehľad teplôt v reálnom čase zo senzorov DS18B20](https://i.imgur.com/ABBGfCK.png)
+![Informácie o režime vykurovania - kotla](https://i.imgur.com/HOFA4sy.png)
+![Nastavenie termostatu](https://i.imgur.com/T2jjkw2.png)
+![Nastavenie názvov miestností - teplomerov](https://i.imgur.com/jZKUvUX.png)
+![Zdrojový kód pre ESP8266 (Arduino) a schéma zapojenia](https://octodex.github.com/images/yaktocat.png)
