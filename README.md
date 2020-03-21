@@ -17,6 +17,14 @@
 * Prehľad profilu, nastavenie riadiaceho teplomera pre termostat, modifikácia názvov teplomerov/miestností, možnosť zvoliť iný mikrokontróler
 * Chat webaplikácia pre komunikáciu medzi celou komunitou v reálnom čase
 * Prehľad zdrojových kódov, možnosť stiahnuť knižnice pre prostredie Arduino IDE
+#
+**Webserver**
+* Webaplikácia používala webserver, ktorý umožňuje pristupovať po HTTP a HTTPS protokole
+* pre HTTP používal prefix www
+* pre HTTPS nepoužíval prefix
+* Vo výsledku existuje pre webserver adresa www.host.sk pre port 80 (HTTP) a host.sk pre port 443 (HTTPS) --> **počíta s tým aj generátor zdrojových kódov projektu**
+* Generátor zdrojových kódov počíta s umiestnením projektu do priečinka vykurovanie_online vzhľadom na root priečinok.
+* **Projekt sa musí nachádzať v: host.sk/vykurovanie_online**
 # Povinosti prevádzkovateľa projektu
 * Stiahnutím a využívaním projektu sa prevádzkovateľ zaväzuje k dodržiavaniu MIT licencie. 
 * Autor projektu si vyhradzuje právo k ponechaniu lišty v spodnej časti stránky
