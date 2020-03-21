@@ -9,6 +9,90 @@ if(isset($_SESSION['uid'])){
 	<?php
 
 ?>
+<style>
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px; // adjust to your needs
+  
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+  
+  
+}
+
+
+// presentational styling
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#34495E, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: #dd5;
+  }
+}
+</style>
 <head>
 <title>Prehľad nameraných údajov</title>
 <?php 
@@ -43,12 +127,26 @@ if(($mikrokontroler=="W5100")AND($hardver=="DS18B20")){
 ?>
 <h2>Zapojenie Arduina a senzorov na OneWire zbernicii</h2>
 <center><img src="https://i.imgur.com/geGdzcE.png" style="display: block; max-width: 100%; height: auto;"></center>
-<pre>
-<b>Zapojenie pre senzory DS18B20:</b>  
-VCC --> 3.3V/5V  (pri 5V napájaní sa senzory jemne ohrievajú, znepresňuje meranie)
-DATA --> D6
-GND --> GND
-</pre>
+<b>Zapojenie pre senzory DS18B20 a Arduino:</b>  
+<table class="table table-striped flat-table flat-table-2" style="color: black; max-width: 100%;">
+<thead>
+<tr>
+<th style="width: 50%;"><strong>Arduino</strong></th>
+<th style="width: 50%;"><strong>DS18B20</strong></th>
+</tr>
+<tr>
+<td>3V3 / 5V</td>
+<td>Vcc</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>D6</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</table>
 <h2><font color="#2ECC71">Zdrojový kód pre HTTP spojenie</font></h2>
 <pre style="background: #2ECC71;">
 #include &lt;avr\wdt.h&gt;
@@ -184,12 +282,26 @@ void loop() {
 ?>
 <h2>Zapojenie Arduina a senzorov na OneWire zbernicii</h2>
 <center><img src="https://i.imgur.com/geGdzcE.png" style="display: block; max-width: 100%; height: auto;"></center>
-<pre>
-<b>Zapojenie pre senzory DS18B20:</b>
-VCC --> 3.3V/5V
-DATA --> D6
-GND --> GND
-</pre>
+<b>Zapojenie pre senzory DS18B20 a Arduino:</b>  
+<table class="rwd-table" style="color: black; max-width: 100%;">
+<thead>
+<tr>
+<th style="width: 50%;"><strong>Arduino</strong></th>
+<th style="width: 50%;"><strong>DS18B20</strong></th>
+</tr>
+<tr>
+<td>3V3 / 5V</td>
+<td>Vcc</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>D6</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</table>
 <h2><font color="#9B59B6">Zdrojový kód pre HTTP spojenie (HTTPS nie je podporované!)</font></h2>
 <pre style="background: #9B59B6;">
 #include &lt;avr\wdt.h&gt;
@@ -327,12 +439,26 @@ void loop() {
 </div>              
 <h2>Zapojenie senzorov na OneWire zbernicii a ESP8266</h2>
 <center><img src="https://i.imgur.com/nPfCvIX.png" style="display: block; max-width: 100%; height: auto;"></center>
-<pre>
-<b>Zapojenie pre senzory DS18B20:</b>
-VCC --> 3.3V
-DATA --> D1 (GPIO5)
-GND --> GND
-</pre>
+<b>Zapojenie pre senzory DS18B20 a ESP8266 (NodeMCU, Wemos D1 Mini):</b>  
+<table class="rwd-table" style="color: black; max-width: 100%;">
+<thead>
+<tr>
+<th style="width: 50%;"><strong>ESP8266 (NodeMCU)</strong></th>
+<th style="width: 50%;"><strong>DS18B20</strong></th>
+</tr>
+<tr>
+<td>3V3</td>
+<td>Vcc</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>D1 (GPIO 5)</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</table>
 <h2><font color="#A93226">Zdrojový kód pre HTTPS spojenie</font></h2>
 <pre style="background: #A93226;">
 //CORE 2.5.0+
@@ -448,12 +574,26 @@ void loop() {
 </div>
 <h2>Zapojenie ESP32 a senzorov na OneWire zbernici</h2>
 <center><img src="https://i.imgur.com/iV5sUg3.png" style="display: block; max-width: 100%; height: auto;"></center>
-<pre>
-<b>Zapojenie pre senzory DS18B20:</b>
-VCC --> 3.3V
-DATA --> D23
-GND --> GND
-</pre>
+<b>Zapojenie pre senzory DS18B20 a ESP32 (DevKit):</b>  
+<table class="rwd-table" style="color: black; max-width: 100%;">
+<thead>
+<tr>
+<th style="width: 50%;"><strong>ESP32</strong></th>
+<th style="width: 50%;"><strong>DS18B20</strong></th>
+</tr>
+<tr>
+<td>3V3</td>
+<td>Vcc</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>D23</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+</table>
 <h2><font color="#3498DB">Zdrojový kód pre HTTPS spojenie - WPA/WPA2 - PSK siete</font></h2>
 <pre style="background: #3498DB;">
 #include &lt;WiFi.h&gt; //Wifi library
