@@ -27,6 +27,7 @@
 * Vo výsledku existuje pre webserver adresa www.host.sk pre port 80 (HTTP) a host.sk pre port 443 (HTTPS) --> **počíta s tým aj generátor zdrojových kódov projektu**
 * Generátor zdrojových kódov počíta s umiestnením projektu do priečinka vykurovanie_online vzhľadom na root priečinok.
 * **Projekt sa musí nachádzať v: host.sk/vykurovanie_online**
+* Zdrojový kód pre ESP8266 využíva HTTPS fingerprint zo stránky php5.sk, ESP32 využíva Root CA certifikát pre CA stránky php5.sk
 
 # Povinosti prevádzkovateľa projektu
 * Stiahnutím a využívaním projektu sa prevádzkovateľ zaväzuje k dodržiavaniu MIT licencie. 
