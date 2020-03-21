@@ -41,7 +41,9 @@
 
 # Platená verzia projektu
 **Ponúka:**
-* Možnosť modifikovať počet OneWire zberníc, možnosť využitia iných teplotných senzorov
+* Možnosť modifikovať počet OneWire zberníc, možnosť využitia iných teplotných senzorov (napr. PT100)
+* API pre JSON výstup pre mikrokontróler (interakcia do ďalších systémov)
+* Dynamická zmena zdrojových kódov na základe vyklikaných požiadaviek
 * Multijazyková podpora (Slovenčina, Čeština, Angličtina, Nemčina, Ruština)
 * Možnosť prezerať všetky namerané dáta
 * Grafická reprezentácia za 24 hodín, 7 dní, 30 dní
@@ -52,4 +54,5 @@
 * Možnosť zmeniť prihlasovacie údaje
 * Možnosť termostatu v dňoch, časoch, časové riadenie
 * Štatistické nástroje, výpisy, exporty do .xls, .xml, .csv
+* Podpora
 * Pri záujme: martinius96@gmail.com
