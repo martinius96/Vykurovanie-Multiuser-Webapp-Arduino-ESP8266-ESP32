@@ -17,8 +17,7 @@
 * Prehľad profilu, nastavenie riadiaceho teplomera pre termostat, modifikácia názvov teplomerov/miestností, možnosť zvoliť iný mikrokontróler
 * Chat webaplikácia pre komunikáciu medzi celou komunitou v reálnom čase
 * Prehľad zdrojových kódov, možnosť stiahnuť knižnice pre prostredie Arduino IDE
-#
-**Webserver**
+# Webserver - NUTNÉ VEDIEŤ
 * Webaplikácia používala webserver, ktorý umožňuje pristupovať po HTTP a HTTPS protokole
 * pre HTTP používal prefix www
 * pre HTTPS nepoužíval prefix
