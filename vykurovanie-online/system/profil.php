@@ -111,11 +111,11 @@ include ("menu.php");
 </div> 
 <?php } ?>
   <h2>Osobné informácie:</h2>
-  <li><b>Používateľské meno:</b> <?php echo $vsetko['username']; ?></li>
-  <li><b>Hash hesla v DB:</b> <?php echo $vsetko['password']; ?></li>
-  <li><b>Mikrokontróler:</b> <?php echo $vsetko['mikrokontroler']; ?></li>
-  <li><b>Senzory:</b> <?php echo $vsetko['hardver']; ?></li>
-  <li><b>Token:</b> <?php echo $vsetko['code']; ?></li>
+  <li><b>Používateľské meno:</b> <?php echo htmlspecialchars($vsetko['username']); ?></li>
+  <li><b>Hash hesla v DB:</b> <?php echo htmlspecialchars($vsetko['password']); ?></li>
+  <li><b>Mikrokontróler:</b> <?php echo htmlspecialchars($vsetko['mikrokontroler']); ?></li>
+  <li><b>Senzory:</b> <?php echo htmlspecialchars($vsetko['hardver']); ?></li>
+  <li><b>Token:</b> <?php echo htmlspecialchars($vsetko['code']); ?></li>
   <li><b>Počet záznamov v databáze:</b> <?php echo $rowcount; ?></li>
  <center> <hr><h2>Názvy teplomerov</h2><hr>
  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post">
