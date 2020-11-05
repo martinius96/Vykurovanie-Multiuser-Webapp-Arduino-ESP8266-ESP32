@@ -1,5 +1,6 @@
 # Multiuser webová aplikácia pre riadenie vykurovania
 * Webaplikácia je voľne dostupná, okresaná - free verzia plného projektu Vykurovania Multiuser webovej aplikácie
+* **FUNKČNOSŤ PROJEKTU A BEZPEČNOSŤ NIE JE GARANTOVANÁ. AUTOR NIE JE ZODPOVEDNÝ ZA ŠKODY, KTORÉ VZNIKNÚ POUŽÍVANÍM PROJEKTU. POUŽÍVATEĽ STIAHNUTÍM A PREVÁDZKOVANIM PROJEKTU SÚHLASÍ S MIT LICENCIOU A JE SI VEDOMÝ NÁSLEDKOV JEJ PORUŠENIA**
 #
 **Podpora projektu pre nové funkcionality, viac dostupných projektov zdarma:**
 * https://www.paypal.me/chlebovec
