@@ -52,7 +52,7 @@
 * Možnosť zmeny prihlasovacieho hesla
 * Zmena mikrokontroléru
 * Možnosť modifikovať počet OneWire zberníc, možnosť využitia iných teplotných senzorov (napr. PT100)
-* POST metóda predávania dát webserveru
+* POST metóda predávania dát webserveru, neakceptácia GET metódy
 * API pre JSON výstup pre mikrokontróler (interakcia do ďalších systémov)
 * Dynamická zmena zdrojových kódov na základe vyklikaných požiadaviek
 * Multijazyková podpora (Slovenčina, Čeština, Angličtina, Nemčina, Ruština)
@@ -63,10 +63,10 @@
 * Admin nástroje pre možnosť zablokovania používateľa, mazanie chatu, pridávanie oznamov na stránku
 * Chat pre každú národnosť (jazykovú) zvlášť
 * Možnosť nutnosti overiť e-mailom registráciu, v opačnom prípade sa používateľ nepripojí
-* Možnosť zmeniť prihlasovacie údaje
 * Možnosť termostatu v dňoch, časoch, časové riadenie
 * Štatistické nástroje, výpisy, exporty do .xls, .xml, .csv
 * Emotikony v chate, ovládanie hlasom v slovenčine a ďalších jazykoch
+* Prepojenie s inými systémami ako entita - Hassio, Domoticz cez JSON výstup
 * Podpora
 * Pri záujme: martinius96@gmail.com
 
