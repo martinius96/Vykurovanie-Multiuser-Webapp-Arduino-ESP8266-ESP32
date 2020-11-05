@@ -118,7 +118,6 @@ ul.topnav li.right {float: right;}
 			</div>
      
      <?php
-			include("global/functions.php");
 function generate_code($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
