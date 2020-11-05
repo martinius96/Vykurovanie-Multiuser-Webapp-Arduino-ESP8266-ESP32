@@ -6,4 +6,9 @@ if (mysqli_connect_errno())
   {
   echo "Problem s napojenim na DB: " . mysqli_connect_error();
   }
+
+ $front_salt=("meteostanice"); 
+  
+  
+   $back_salt=("backend");
 ?>
