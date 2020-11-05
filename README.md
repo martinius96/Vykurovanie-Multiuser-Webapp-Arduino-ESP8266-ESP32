@@ -20,7 +20,7 @@
 * **Automatický režim** Spustenie termostatu s voliteľnou hysterézou 0-5°C s 0.25°C krokom, referenčnou teplotou 5-30°C
 * **Manuálny režim** Spustenie výstupu na neobmedzenú dobu (používateľ upovedomený na webe)
 * **Výstup je možné využiť pre kontakt na relé kotla, solenoidu radiátora**
-* Prehľad profilu, nastavenie riadiaceho teplomera pre termostat, modifikácia názvov teplomerov/miestností, možnosť zvoliť iný mikrokontróler
+* Prehľad profilu a základných informácii (prihlasovacie meno, riadiaci mikrokontróler, počet záznamov v databáze, token)
 * Chat webaplikácia pre komunikáciu medzi celou komunitou v reálnom čase
 * Prehľad zdrojových kódov, možnosť stiahnuť knižnice pre prostredie Arduino IDE
 
@@ -47,6 +47,10 @@
 
 # Platená verzia projektu
 **Ponúka:**
+* Možnosť zmeny názvov miestností, riadici teplomer
+* Podpora Deep-sleep režim pre ESP8266, ESP32, podpora OTA (Over The Air) formou webservera / cez LAN sieť
+* Možnosť zmeny prihlasovacieho hesla
+* Zmena mikrokontroléru
 * Možnosť modifikovať počet OneWire zberníc, možnosť využitia iných teplotných senzorov (napr. PT100)
 * POST metóda predávania dát webserveru
 * API pre JSON výstup pre mikrokontróler (interakcia do ďalších systémov)
