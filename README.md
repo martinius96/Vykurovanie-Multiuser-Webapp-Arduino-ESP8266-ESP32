@@ -15,7 +15,7 @@
 **Webaplikácia umožňuje**
 * Registráciu a prihlásenie používateľov so zvolením riadiaceho mikrokontroléru
 * Každému používateľovi je priradený token (Api kľúč), ktorým mikrokontróler zapisuje a číta z webového portálu
-* Prehľad 6 teplôt v reálnom čase (každý používateľ vidí iba svoje dáta)
+* Prehľad posledných 6 teplôt v hlavnom prehľade (každý používateľ vidí iba svoje dáta)
 * Historicky prehľad posledných 1000 nahratých záznamov
 * Grafická reprezentácia záznamov za 24 hodín
 * **Automatický režim** Spustenie termostatu s voliteľnou hysterézou 0-5°C s 0.25°C krokom, referenčnou teplotou 5-30°C
