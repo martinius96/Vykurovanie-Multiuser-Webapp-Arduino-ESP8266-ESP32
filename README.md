@@ -8,8 +8,8 @@
 **Podporovaný otvorený hardvér**
 * **Arduino + Ethernet W5100** - **HTTP** protokol
 * **Arduino + Ethernet W5500** - **HTTP** protokol
-* **ESP8266** (NodeMCU, Wemos D1 Mini) - **HTTPS** protokol
-* **ESP32** (DevKit) - **HTTPS protokol**
+* **ESP8266** (NodeMCU, Wemos D1 Mini) - **HTTPS** protokol - bez implementácie HTTP
+* **ESP32** (DevKit) - **HTTPS** protokol - bez implementácie HTTP
 * - všetky platformy využívajú 6 teplotných senzorov Dallas DS18B20 na jednej OneWire zbernici
 #
 **Webaplikácia umožňuje**
