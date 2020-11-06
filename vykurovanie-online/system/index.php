@@ -41,23 +41,13 @@ include ("menu.php");
 	<!-- Javascript -->	
  <script>
 $(function() {
-    $.get('get_tabulka.php', function(data){
-        $('#tabulka').html(data)
-    });
-    $.get('logika.php', function(data){
-        $('#logika').text(data)
-    });
+        $.get('logika.php', function(data){
+        	$('#logika').text(data)
+    	});
+	$.get('get_tabulka.php', function(data){
+        	$('#tabulka').html(data)
+    	});
   }); 
-</script>
-<script>
-setInterval(function(){
-  $.get('get_tabulka.php', function(data){
-  $('#tabulka').html(data)
-  });
-  $.get('logika.php', function(data){
-  $('#logika').text(data)
-  });
-  },15000);   
 </script>
 </html>
 <?php }else{
