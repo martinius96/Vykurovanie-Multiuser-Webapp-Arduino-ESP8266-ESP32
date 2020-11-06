@@ -48,6 +48,7 @@
 
 # Platená verzia projektu
 **Ponúka:**
+* Real-time dáta zo senzora na úvodnej stránke
 * Možnosť zmeny názvov miestností, riadici teplomer
 * Podpora Deep-sleep režim pre ESP8266, ESP32, podpora OTA (Over The Air) formou webservera / cez LAN sieť
 * Možnosť zmeny prihlasovacieho hesla
