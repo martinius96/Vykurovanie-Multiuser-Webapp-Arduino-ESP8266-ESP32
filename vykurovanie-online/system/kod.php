@@ -460,7 +460,10 @@ void loop() {
 </tr>
 </table>
 <h2><font color="#A93226">Zdrojový kód pre HTTPS spojenie</font></h2>
-<pre style="background: #A93226;">
+<div class="alert alert-danger">
+  <strong>Doplňte si do zdrojového kódu odtlačok HTTPS certifikátu webservera v SHA1 formáte, tu použitý je pre neexistujúcu doménu.</strong> Možno použiť nástroj OpenSSL a príkaz (vzorovo pre doménu example.com): openssl s_client -connect example.com:443 -showcerts < /dev/null 2>/dev/null | openssl x509 -in /dev/stdin -sha1 -noout -fingerprint
+</div>
+	<pre style="background: #A93226;">
 //CORE 2.5.0+
 //CORE 2.3.0 nie je naďalej podporovane a HTTPS nefunguje.
 //Nutne updatovať Arduino core na min verziu 2.5.0
@@ -595,6 +598,9 @@ void loop() {
 </tr>
 </table>
 <h2><font color="#3498DB">Zdrojový kód pre HTTPS spojenie - WPA/WPA2 - PSK siete</font></h2>
+<div class="alert alert-danger">
+  <strong>Doplňte si do zdrojového kódu Root CA certifikát v .pem formáte, ktorý vydal certifikát pre váš webserver.</strong> Možno použiť nástroj OpenSSL a príkaz (vzorovo pre doménu example.com): openssl s_client -showcerts -verify 5 -connect example.com:443 < /dev/null
+</div>	
 <pre style="background: #3498DB;">
 #include &lt;WiFi.h&gt; //Wifi library
 #include &lt;WiFiClientSecure.h&gt;
