@@ -1,6 +1,6 @@
 # Multiuser webová aplikácia pre riadenie vykurovania
 * Webaplikácia je voľne dostupná, okresaná - free verzia pôvodného (plného) projektu Vykurovania Multiuser webovej aplikácie
-* Možnosť vyskúšať: http://arduino.clanweb.eu/vykurovanie-online/ (LEN HTTP VERZIA --> Arduino + Ethernet / ESP8266 / ESP32), HTTPS nepodporované
+* Možnosť vyskúšať: http://arduino.clanweb.eu/vykurovanie-online/ (LEN HTTP VERZIA --> Arduino + Ethernet W5100), HTTPS nepodporované
 #
 **Podporovaný otvorený hardvér**
 * **Arduino + Ethernet W5100** - **HTTP** protokol
