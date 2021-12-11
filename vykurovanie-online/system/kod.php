@@ -209,7 +209,7 @@ void odosli_data() {
     client.print("&username=");
     client.print(username);
     client.println(" HTTP/1.0");
-    client.println("Host: www.arduino.php5.sk");
+    client.println("Host: <?php echo "www.".$_SERVER['SERVER_NAME']; ?>");
     client.println("Connection: close");
     client.println();
     Serial.println("Teploty na web uspesne odoslane:");
@@ -238,7 +238,7 @@ void stav_rele() {
     client.print("&username=");
     client.print(username);
     client.println(" HTTP/1.0");
-    client.println("Host: www.arduino.php5.sk");
+    client.println("Host: <?php echo "www.".$_SERVER['SERVER_NAME']; ?>");
     client.println("Connection: close");
     client.println();
     while (client.connected()) {
@@ -362,7 +362,7 @@ void odosli_data() {
     client.print("&username=");
     client.print(username);
     client.println(" HTTP/1.0");
-    client.println("Host: www.arduino.php5.sk");
+    client.println("Host: <?php echo "www.".$_SERVER['SERVER_NAME']; ?>");
     client.println("Connection: close");
     client.println();
     Serial.println("Teploty na web uspesne odoslane:");
@@ -391,7 +391,7 @@ void stav_rele() {
     client.print("&username=");
     client.print(username);
     client.println(" HTTP/1.0");
-    client.println("Host: www.arduino.php5.sk");
+    client.println("Host: <?php echo "www.".$_SERVER['SERVER_NAME']; ?>");
     client.println("Connection: close");
     client.println();
     while (client.connected()) {
