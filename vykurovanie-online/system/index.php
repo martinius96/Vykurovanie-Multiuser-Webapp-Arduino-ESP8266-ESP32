@@ -43,12 +43,12 @@ $ins = mysqli_query($con,"INSERT INTO `data_vykurovanie` (`teplota1`,`teplota2`,
 }
 ?>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post">
-			<b>Teplota1: </b><input  type="number" min=-30 max=75 step=0.5 name="teplomer1" required><br> 
-			<b>Teplota2: </b><input  type="number" min=-30 max=75 step=0.5 name="teplomer2" required><br> 
-			<b>Teplota3: </b><input  type="number" min=-30 max=75 step=0.5 name="teplomer3" required> <br>
-			<b>Teplota4: </b><input  type="number" min=-30 max=75 step=0.5 name="teplomer4" required> <br>
-			<b>Teplota5: </b><input  type="number" min=-30 max=75 step=0.5 name="teplomer5" required> <br>
-			<b>Teplota6: </b><input  type="number" min=-30 max=75 step=0.5 name="teplomer6" required> <br>
+			<b>Teplota1: </b><input  type="number" min=-30 max=75 name="teplomer1" required><br> 
+			<b>Teplota2: </b><input  type="number" min=-30 max=75 name="teplomer2" required><br> 
+			<b>Teplota3: </b><input  type="number" min=-30 max=75 name="teplomer3" required> <br>
+			<b>Teplota4: </b><input  type="number" min=-30 max=75 name="teplomer4" required> <br>
+			<b>Teplota5: </b><input  type="number" min=-30 max=75 name="teplomer5" required> <br>
+			<b>Teplota6: </b><input  type="number" min=-30 max=75 name="teplomer6" required> <br>
 			<input type="submit" class="btn btn-success" name="zapis_hodnoty" value="Zapísať">
 </form>
 <div class="alert alert-success">
