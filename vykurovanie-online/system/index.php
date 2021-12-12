@@ -42,7 +42,7 @@ $ins = mysqli_query($con,"INSERT INTO `data_vykurovanie` (`teplota1`,`teplota2`,
 <?php
 }
 ?>
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post" style="display: none;">
 			<b>Teplota1: </b><input  type="number" min=-30 max=75 name="teplomer1" required><br> 
 			<b>Teplota2: </b><input  type="number" min=-30 max=75 name="teplomer2" required><br> 
 			<b>Teplota3: </b><input  type="number" min=-30 max=75 name="teplomer3" required> <br>
